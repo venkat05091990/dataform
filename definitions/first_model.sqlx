@@ -1,8 +1,2 @@
-config {
-    type: "view",
-    schema: "test_ds"
-}
-
-SELECT
-  "Test" AS name,
-  "Test2" AS name2
+config { type: "table"}
+SELECT * FROM ${ref("first_view")}
