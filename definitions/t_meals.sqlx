@@ -1,0 +1,13 @@
+config{
+    type:"incrmental",
+    schema:"dataform",
+}
+
+SELECT 
+    meal_id,
+    meal_name,
+    meal_type,
+    calories,
+    '${dataform.projectConfig.vars.execution_date}' as execution_date
+FROM ${ref('meals')}
+WHERE date = '${dataform.projectConfig.vars.execution_date}'
