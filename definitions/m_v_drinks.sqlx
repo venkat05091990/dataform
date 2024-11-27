@@ -1,0 +1,6 @@
+config {
+    type: "view",
+    schema: "dataform",
+    materialized: true
+}
+SELECT * FROM ${ref("drinks")}
