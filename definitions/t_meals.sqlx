@@ -1,6 +1,7 @@
-config{
-    type:"incrmental",
-    schema:"dataform",
+config {
+    type: "incremental",
+    schema: "dataform",
+    uniqueKey: ["meal_id"]
 }
 
 SELECT 

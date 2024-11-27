@@ -4,5 +4,4 @@ defaultDataset: raw
 defaultAssertionDataset: dataform_assertions
 dataformCoreVersion: 3.0.0
 vars:
-  execution_date: "2024-11-28",
-  filter_date: "2024-11-26"
+  execution_date: "2024-11-28"
