@@ -1,2 +1,5 @@
-config { type: "table"}
-SELECT * FROM ${ref("first_view")}
+config {
+    type: "table"
+}
+
+SELECT "dataform" as name, "GCP" as platform
