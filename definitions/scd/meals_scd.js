@@ -22,8 +22,3 @@ const { updates, view } = scd("source_data_meals_scd", {
     },
   },
 });
-
-// Additional customization of the created models can be done by using the returned actions objects.
-updates.config({
-  description: "Updates table for SCD",
-});
