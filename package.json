@@ -1,5 +1,5 @@
 {
-    "name": "dataform-scd",
+    "name": "dataform-gcp",
     "dependencies": {
         "@dataform/core": "3.0.0",
         "dataform-scd": "https://github.com/dataform-co/dataform-scd/archive/0.3.tar.gz"
