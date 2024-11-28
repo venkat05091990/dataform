@@ -1,6 +1,7 @@
 config {
     type: "table",
     schema: "dataform",
+    tags: ["daily"],
     assertions: {
         uniqueKey:["drink_id"],
         nonNull: ["drink_id", "drink_name"],

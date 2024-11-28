@@ -1,6 +1,7 @@
 config {
     type: "incremental",
     schema: "dataform",
+    tags: ["weekly"]
     uniqueKey: ["meal_id"]
 }
 
