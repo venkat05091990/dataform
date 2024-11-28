@@ -1,0 +1,17 @@
+config {
+    type:"incremental",
+    schema:"dataform",
+    uniqueKey:["drink_id", "meal_id"]
+}
+
+SELECT 
+    drinks.drink_id,
+    meals.meal_id,
+    drinks.drink_name,
+    meals.meal_name,
+    meals.price,
+    meals.calories
+FROM ${ref('meals')} as meals
+JOIN ${ref('drinks')} as drinks
+USING (drink_id)
+WHERE meals.date = '${dataform.projectConfig.vars.execution_date}'

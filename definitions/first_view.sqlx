@@ -1,8 +1,0 @@
-config {
-    type: "view",
-    schema: "test_ds"
-}
-
-SELECT
-  "Test" AS name,
-  "Test2" AS name2

@@ -1,2 +1,0 @@
-config { type: "table"}
-SELECT * FROM ${ref("first_view")}

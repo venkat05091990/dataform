@@ -1,0 +1,7 @@
+config {type: "assertion"}
+
+SELECT 
+    *
+FROM ${ref("drinks")}
+WHERE
+    drink_id IS NULL

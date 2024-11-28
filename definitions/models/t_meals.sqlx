@@ -1,0 +1,15 @@
+config {
+    type: "incremental",
+    schema: "dataform",
+    tags: ["weekly"],
+    uniqueKey: ["meal_id"]
+}
+
+SELECT 
+    meal_id,
+    meal_name,
+    meal_type,
+    calories,
+    '${dataform.projectConfig.vars.execution_date}' as execution_date
+FROM ${ref('meals')}
+WHERE date = '${dataform.projectConfig.vars.execution_date}'
