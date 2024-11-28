@@ -1,0 +1,11 @@
+{
+    "defaultDatabase": "crested-mercury-442905-r8",
+    "defaultSchema": "raw",
+    "assertionSchema": "dataform_assertions",
+    "warehouse": "bigquery",
+    "defaultLocation":"asia-south1",
+    "vars":{
+        "execution_date": "2024-11-28",
+        "country":"US"
+    }
+}

@@ -1,7 +1,0 @@
-defaultProject: crested-mercury-442905-r8
-defaultLocation: asia-south1
-defaultDataset: raw
-defaultAssertionDataset: dataform_assertions
-dataformCoreVersion: 3.0.0
-vars:
-  execution_date: "2024-11-28"
